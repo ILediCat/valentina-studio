@@ -130,9 +130,25 @@ td {
 
 /* Адаптивність */
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 15px;
+        padding: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
     .about-grid {
         grid-template-columns: 1fr;
     }
+
     .gallery-img {
         width: 90%;
     }
