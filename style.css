@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@300;400&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfaf8;
+    color: #4a403a;
+    margin: 0;
+}
+
+/* Навігація */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10%;
+    align-items: center;
+    background-color: #ebe7e3;
+}
+
+.logo-img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a403a;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #8b8580;
+}
+
+/* Елементи сторінок */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background: #8b8580;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6d6864;
+}
+
+/* Секції та сітки */
+.content-section, .about-section, .services-section, .contacts-section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.gallery-img {
+    width: 40%;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 40px;
+}
+
+.about-photo, .way-video {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Таблиця */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+}
+
+th {
+    background: #ebe7e3;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f9f9f9;
+    text-align: left;
+}
+
+.category {
+    background: #fdfaf8;
+    font-weight: bold;
+    color: #8b8580;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding-top: 30px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-img {
+        width: 90%;
+    }
+}

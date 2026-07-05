@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас | Valentina Beauty Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навігаційна панель -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="img/Логотип.jpg" alt="Valentina Logo" class="logo-img">
+        </div>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <!-- Секція "Про нас" -->
+    <section class="about-section">
+        <h2>Про нашу студію</h2>
+        
+        <div class="about-grid">
+            <!-- Блок з текстом та фото -->
+            <div class="about-text-content">
+                <img src="img/Майстриня.jpg" alt="Майстриня Валентина" class="about-photo">
+                <p>Valentina Beauty Studio — це простір, де професіоналізм поєднується з затишком. Ми дбаємо про те, щоб кожна деталь вашого візиту була бездоганною.</p>
+            </div>
+
+            <!-- Блок з відео "Процес" -->
+            <div class="about-video-content">
+                <h3>Процес роботи:</h3>
+                <video controls class="way-video">
+                    <source src="img/Процес.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відео.
+                </video>
+            </div>
+        </div>
+
+        <!-- Галерея естетики -->
+        <div class="aesthetic-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 50px;">
+            <img src="img/Естетік.jpg" alt="Естетика студії" style="width: 100%; height: 350px; object-fit: cover; border-radius: 15px;">
+            <img src="img/Естетік2.jpg" alt="Деталі студії" style="width: 100%; height: 350px; object-fit: cover; border-radius: 15px;">
+        </div>
+    </section>
+
+</body>
+</html>
